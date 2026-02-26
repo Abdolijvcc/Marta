@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Para Doña Marta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- CABECERA -->
+        <header class="intro">
+            <h1>Para Doña Marta</h1>
+            <p class="subtitle" style="font-family: 'Cormorant Garamond', serif; font-size: 1.2em; color: var(--terracota);">con todo nuestro cariño</p>
+            <div class="date">27 de Febrero</div>
+            
+            <div class="quote">
+                "El placer en el trabajo perfecciona la obra"<br>
+                <span style="font-size: 0.8em; margin-top: 5px; display: block;">— Aristóteles</span>
+            </div>
+        </header>
+
+        <!-- CARTA PERSONAL -->
+        <div class="letter-box">
+            <div class="handwritten">
+                <p>Querida Marta,</p>
+                <p>Mis mas sincerisimas felicitaciones </p>
+
+                <p>Cuando pensamos en cómo celebrarte, recordamos tus clases. No solo nos enseñaste filosofía; nos enseñaste a pensar, a dudar, a maravillarnos.</p>
+
+                <p>Como Aristóteles con sus discípulos en el Liceo, plantaste semillas que hoy siguen creciendo en cada uno de nosotros.</p>
+
+                <p>Este pequeño detalle es para decirte: <strong>gracias</strong>. Por tu paciencia infinita, por tus explicaciones que iluminaban lo complejo, por ese gesto tuyo de asentir cuando alguien finalmente entendía, y por repetir mas de 3 veces para que el AKRAM entendiera la diferencia entre alma platon y aristoteles.</p>
+
+                <p>Que sigas enseñando a los demás, que sigas siendo la mejor profesora que hemos tenido, y la mejor persona que hemos conocido. De verdad me estoy enamorando de la filosofía: "la filosofía es apasionante".</p>
+                
+                <div class="signature">Tus alumnos de filosofía</div>
+            </div>
+        </div>
+
+        <!-- VIRTUDES --
+        <div class="virtues-section">
+            <div class="virtue">
+                <div class="virtue-title">Tu Sabiduría</div>
+                <div class="virtue-text">
+                    "Nunca olvidaremos cómo nos explicaste la teoría de las cuatro causas. En ese momento, todo el universo aristotélico cobró sentido."
+                </div>
+            </div>
+
+            <div class="virtue">
+                <div class="virtue-title">Tu Paciencia</div>
+                <div class="virtue-text">
+                    "Cuando no entendíamos el término medio, repetías con ejemplos nuevos hasta que la luz se encendía en nuestros ojos."
+                </div>
+            </div>
+
+            <div class="virtue">
+                <div class="virtue-title">Tu Pasión</div>
+                <div class="virtue-text">
+                    "Cuando hablas de la eudaimonía, tus ojos brillan. Nos contagiaste ese amor por la filosofía que nunca olvidaremos."
+                </div>
+            </div>
+        </div>
+    -->
+        <!-- MENSAJES -->
+        <h2 style="font-size: 1.4em; margin-top: 50px;">Recuerdos Compartidos</h2>
+        <div class="messages-container">
+            <div class="message-card">
+                "Marta, Feliz cumpleaños queridisima estimida doña profesora Marta"
+                <div class="message-author">— Don A.khamis</div>
+            </div>
+
+            <div class="message-card">
+                "Feliz cumpleaños (me hizo poner un mensaje aquí)."
+                <div class="message-author">— Christian</div>
+            </div>
+
+            <div class="message-card">
+                "Feliz cumpleaños."
+                <div class="message-author">— Mustafa</div>
+            </div>
+             <div class="message-card">
+                "En este día tan bendecido, extiendo mis saludos a Su Majestad Imperial, el Sol del Imperio, la Madre del cosmos y creadora de la divinidad. 
+                Mis palabras humildes, por mucho que imiten Vuestro hablar, nunca podrán captar de manera completa y plena Su nobleza. Pero aún así, le pido el permiso de poder agradecerle por bendecirnos con otro año más en Su existencia, bendiciendo nuestras almas y seres con la perfección eterna. Espero, en mi sustancia más humilde, que las estrellas sigan escuchando Vuestro susurro e intenten imitarlo; que las agujas del tiempo eterno siga Vuestra merced, rotando cuando Usted le de permiso; que todo lo vivo siga naciendo, creciendo y muriendo intentando llegar a conocer Vuestra ejecución divina. 
+                <br>Feliz cumpleaños, Su Majestad Imperial, Reina Marta I."
+                <div class="message-author">— Sofía</div>
+            </div>
+            <div class="message-card">
+                " عيد ميلادك سعيد"
+                <div class="message-author">— Akram</div>
+            </div>
+            <div class="message-card">
+                "Feliz cumpleaños"
+                <div class="message-author">— Yacine</div>
+            </div>
+        </div>
+
+        <!-- JUEGO MEMORIA (SUTIL) -->
+        <div class="game-section">
+            <div class="game-title-small">Si tienes un momento libre...</div>
+            <div style="font-size: 0.9em; color: var(--sepia-light); margin-bottom: 20px;">Un pequeño juego de memoria con símbolos del Liceo</div>
+            <div class="memory-grid" id="memoryGame"></div>
+            
+            <!-- SECRET PHOTOS -->
+            <div id="secretPhotos" class="secret-photos-container" style="display: none;">
+                <p style="margin-top: 20px; color: var(--terracota-dark); font-style: italic;">¡Felicidades!</p>
+                <div class="photos-grid">
+                    <img src="foto_recuerdo_1.jpg" alt="Recuerdo especial 1" class="polaroid">
+                    <img src="foto_recuerdo_2.jpg" alt="Recuerdo especial 2" class="polaroid">
+                </div>
+            </div>
+        </div>
+
+        <!-- DONACIÓN (BROMA) -->
+        <div class="donation-section">
+            <button class="donation-btn" onclick="openPrankModal()">Dona 1 euro para Marta</button>
+            <p style="font-size: 0.8em; color: var(--sepia-light); margin-top: 10px;">(Ella se lo merece, ¿no?)</p>
+        </div>
+
+        <!-- CELEBRACIÓN -->
+        <div class="celebration">
+            <div style="font-size: 1.1em; color: var(--terracota-dark); margin-bottom: 20px;">Un deseo para este año toca</div>
+            
+            <div class="cake-container" onclick="blowCandles()">
+                <div class="candles" id="candles">🕯️</div>
+                <div class="cake-emoji">🎂</div>
+            </div>
+            
+            <div class="wish-text" id="wishText"></div>
+        </div>
+
+        <footer>
+            &copy; <br>copy right 2026<br>
+            Con admiración y cariño<br>
+            hecho por tu alumno Don A.khamis<br>
+            junto con el señor Don Claude.ai y Gemini 
+
+        </footer>
+    </div>
+
+    <!-- PRANK MODAL -->
+    <div id="prankModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closePrankModal()">&times;</span>
+            <h3 style="margin-bottom: 20px; color: #333;">Pasarela de Pago Segura (o casi)</h3>
+            <p style="font-size: 0.9em; margin-bottom: 20px;">Estás a punto de hacer una donación de <b>1.00 €</b> a <b>Doña Marta</b>.</p>
+            
+            <form id="prankForm" onsubmit="handlePrankPayment(event)">
+                <div class="form-group">
+                    <label>Número de Tarjeta</label>
+                    <input type="text" placeholder="#### #### #### ####" onfocus="showJokeTip('¿En serio ibas a poner tu tarjeta aquí?')">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Caducidad</label>
+                        <input type="text" placeholder="MM/AA" onfocus="showJokeTip('¡La paciencia de Marta caduca antes que esta tarjeta!')">
+                    </div>
+                    <div class="form-group">
+                        <label>CVV</label>
+                        <input type="text" placeholder="###" onfocus="showJokeTip('CVV: Código de Verdad Verdadera')">
+                    </div>
+                </div>
+                <button type="submit" class="pay-btn">Confirmar Pago de 1.00€</button>
+            </form>
+            
+            <div id="jokeTip" class="joke-tip"></div>
+            
+            <div id="finalJoke" class="final-joke" style="display: none;">
+                <h4>¡PILLADA! 😂</h4>
+                <p>¿De verdad creías que íbamos a aceptar dinero? El mejor regalo es que te hayas dignado a entrar aquí.</p>
+                <p>¡Marta te pondrá un 10 por tu generosidad (o no)!</p>
+                <button onclick="closePrankModal()" class="donation-btn" style="margin-top: 15px; width: auto;">Volver a la fiesta</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
